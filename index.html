@@ -1,12 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>Progate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まちづけ写真レトロキャンペーン | SnapDomrichi</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="title">HTML & CSS の開発環境を用意しよう！</h1>
-    <p>自分のPCでWebページを開発する方法を学習しましょう</p>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-logo">SnapDomrichi</div>
+        <nav class="header-nav">
+          <a href="#">キャンペーン</a>
+          <a href="#">スポット</a>
+          <a href="#">アプリ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="top.png" alt="キャンペーンイメージ" class="hero-bg">
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag">📸 期間限定</div>
+        <h1 class="hero-title">
+          まちづけ<br>
+          写真レトロ<br>
+          <span class="hero-title-accent">キャンペーン！</span>
+        </h1>
+        <p class="hero-subtitle">街を歩いて、レトロな写真を撮ろう</p>
+        <a href="#" class="hero-btn">アプリをダウンロード</a>
+      </div>
+      <div class="hero-clouds">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+    </section>
+
+    <!-- キャンペーン概要 -->
+    <section class="overview">
+      <div class="section-inner">
+        <div class="section-label">キャンペーン概要</div>
+        <h2 class="section-title">まちづけ写真レトロキャンペーンとは？</h2>
+        <p class="overview-text">
+          SnapDomrichiアプリを使って街を歩き、指定されたチェックインスポットで写真を撮影しよう！<br>
+          レトロなフィルターで加工した写真をシェアすると、抽選で素敵なプレゼントが当たります。
+        </p>
+        <div class="overview-period">
+          <span class="period-label">開催期間</span>
+          <span class="period-date">2026年3月1日（土）〜 3月31日（火）</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ステップ説明 -->
+    <section class="steps">
+      <div class="section-inner">
+        <div class="section-label">参加方法</div>
+        <h2 class="section-title">3ステップで参加できる！</h2>
+
+        <div class="step-list">
+          <div class="step-item">
+            <div class="step-number">01</div>
+            <div class="step-icon">📱</div>
+            <div class="step-body">
+              <h3 class="step-title">アプリをインストール</h3>
+              <p class="step-text">SnapDomrichiアプリをスマートフォンにダウンロードしてアカウントを作成しましょう。</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">02</div>
+            <div class="step-icon">📍</div>
+            <div class="step-body">
+              <h3 class="step-title">スポットへ行こう</h3>
+              <p class="step-text">マップで表示されるチェックインスポットを訪れて、その場所で写真を撮影してチェックイン！</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">03</div>
+            <div class="step-icon">🎁</div>
+            <div class="step-body">
+              <h3 class="step-title">プレゼントをゲット</h3>
+              <p class="step-text">指定スポット数以上チェックインするとプレゼントに応募できます。抽選で素敵な賞品をプレゼント！</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn-primary">参加登録はこちら</a>
+      </div>
+    </section>
+
+    <!-- チェックイン地点 -->
+    <section class="spots">
+      <div class="section-inner">
+        <div class="section-label">チェックイン地点</div>
+        <h2 class="section-title">対象スポット一覧</h2>
+        <p class="spots-text">全15スポットを巡ってコンプリートを目指そう！</p>
+
+        <div class="spots-grid">
+          <div class="spot-card">
+            <div class="spot-img spot-img-1"></div>
+            <div class="spot-info">
+              <div class="spot-category">カフェ</div>
+              <div class="spot-name">レトロ喫茶 いろは</div>
+              <div class="spot-address">中央区本町3-5</div>
+            </div>
+          </div>
+          <div class="spot-card">
+            <div class="spot-img spot-img-2"></div>
+            <div class="spot-info">
+              <div class="spot-category">観光</div>
+              <div class="spot-name">旧港町ビュースポット</div>
+              <div class="spot-address">港区みなと1-2</div>
+            </div>
+          </div>
+          <div class="spot-card">
+            <div class="spot-img spot-img-3"></div>
+            <div class="spot-info">
+              <div class="spot-category">グルメ</div>
+              <div class="spot-name">老舗ベーカリー まるや</div>
+              <div class="spot-address">北区上町7-1</div>
+            </div>
+          </div>
+          <div class="spot-card">
+            <div class="spot-img spot-img-4"></div>
+            <div class="spot-info">
+              <div class="spot-category">ショップ</div>
+              <div class="spot-name">アンティーク雑貨店 蔵</div>
+              <div class="spot-address">東区古町2-4</div>
+            </div>
+          </div>
+          <div class="spot-card">
+            <div class="spot-img spot-img-5"></div>
+            <div class="spot-info">
+              <div class="spot-category">公園</div>
+              <div class="spot-name">桜川緑地公園</div>
+              <div class="spot-address">南区川沿い5-8</div>
+            </div>
+          </div>
+          <div class="spot-card">
+            <div class="spot-img spot-img-6"></div>
+            <div class="spot-info">
+              <div class="spot-category">神社</div>
+              <div class="spot-name">稲荷神社</div>
+              <div class="spot-address">西区宮前9-3</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn-outline">スポットをすべて見る</a>
+      </div>
+    </section>
+
+    <!-- ゆかりある人々 -->
+    <section class="people">
+      <div class="section-inner">
+        <div class="section-label">ゆかりある人々</div>
+        <h2 class="section-title">地域の皆さんからのメッセージ</h2>
+
+        <div class="people-list">
+          <div class="people-card">
+            <div class="people-avatar people-avatar-1"></div>
+            <div class="people-body">
+              <div class="people-name">田中 花子さん</div>
+              <div class="people-role">カフェオーナー</div>
+              <p class="people-comment">「このキャンペーンで地元の魅力を再発見してもらえると嬉しいです。ぜひ足を運んでください！」</p>
+            </div>
+          </div>
+          <div class="people-card">
+            <div class="people-avatar people-avatar-2"></div>
+            <div class="people-body">
+              <div class="people-name">山本 太郎さん</div>
+              <div class="people-role">地域観光協会</div>
+              <p class="people-comment">「昔から変わらぬ街の風景とともに、新しい思い出を作ってほしいですね。」</p>
+            </div>
+          </div>
+          <div class="people-card">
+            <div class="people-avatar people-avatar-3"></div>
+            <div class="people-body">
+              <div class="people-name">佐藤 美咲さん</div>
+              <div class="people-role">写真家</div>
+              <p class="people-comment">「レトロフィルターで撮るとどんな場所も特別に見えます。ぜひ挑戦してみて！」</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="section-inner">
+        <div class="section-label">よくある質問</div>
+        <h2 class="section-title">FAQ</h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">参加費はかかりますか？</summary>
+            <div class="faq-answer">参加費は一切かかりません。SnapDomrichiアプリは無料でダウンロードいただけます。</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">何人でも参加できますか？</summary>
+            <div class="faq-answer">はい、年齢・人数の制限はありません。お一人でも、グループでもご参加いただけます。</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">チェックインに必要なものはありますか？</summary>
+            <div class="faq-answer">スマートフォンとSnapDomrichiアプリがあればOKです。チェックイン時はGPS機能をオンにしてください。</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">プレゼントの当選通知はいつ届きますか？</summary>
+            <div class="faq-answer">キャンペーン終了後（4月上旬予定）にアプリ内メッセージにてご連絡いたします。</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">一度チェックインしたスポットに再訪問できますか？</summary>
+            <div class="faq-answer">再訪問は可能ですが、チェックインのカウントは1スポット1回までとなります。</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- マップ -->
+    <section class="map-section">
+      <div class="section-inner">
+        <div class="section-label">スポットマップ</div>
+        <h2 class="section-title">チェックインマップ</h2>
+        <p class="map-text">アプリで全スポットの場所を確認しよう！</p>
+        <div class="map-placeholder">
+          <div class="map-pin map-pin-1">📍</div>
+          <div class="map-pin map-pin-2">📍</div>
+          <div class="map-pin map-pin-3">📍</div>
+          <div class="map-pin map-pin-4">📍</div>
+          <div class="map-pin map-pin-5">📍</div>
+          <div class="map-label">マップで確認する</div>
+        </div>
+        <a href="#" class="btn-primary">アプリでマップを開く</a>
+      </div>
+    </section>
+
+    <!-- CTAバナー -->
+    <section class="cta">
+      <div class="section-inner">
+        <div class="cta-cat">🐱</div>
+        <h2 class="cta-title">さあ、まちへ出かけよう！</h2>
+        <p class="cta-text">SnapDomrichiアプリをダウンロードして<br>キャンペーンに参加しよう</p>
+        <div class="cta-btns">
+          <a href="#" class="btn-store">
+            <span class="store-icon">🍎</span> App Store
+          </a>
+          <a href="#" class="btn-store">
+            <span class="store-icon">▶</span> Google Play
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">SnapDomrichi</div>
+        <div class="footer-links">
+          <a href="#">利用規約</a>
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">お問い合わせ</a>
+        </div>
+        <div class="footer-sns">
+          <a href="#" class="sns-icon">𝕏</a>
+          <a href="#" class="sns-icon">📸</a>
+        </div>
+        <p class="footer-copy">© 2026 SnapDomrichi. All rights reserved.</p>
+      </div>
+    </footer>
+
   </body>
 </html>
